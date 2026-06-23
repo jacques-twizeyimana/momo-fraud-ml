@@ -1,6 +1,7 @@
 # Python venv and cache
 venv/
 __pycache__/
+*.pyc
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
