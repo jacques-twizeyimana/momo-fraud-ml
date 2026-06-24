@@ -1,0 +1,8 @@
+# Python venv and cache
+venv/
+__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+.DS_Store
