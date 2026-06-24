@@ -9,8 +9,8 @@ Author: **Jacques Twizeyimana**
 
 ### Quick links
 
-- 📄 **Report:** [`report.pdf`](report.pdf) ([Markdown source](report.md))
-- 🎥 **Demo video:** https://www.bugufi.link/9BmltG
+- **Report:** [`report.pdf`](report.pdf)
+- **Demo video:** https://www.bugufi.link/9BmltG
 - **Dataset (PaySim):** https://www.kaggle.com/datasets/ealaxi/paysim1
 
 ---
