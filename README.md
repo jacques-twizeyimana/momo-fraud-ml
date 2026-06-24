@@ -7,6 +7,12 @@ mobile-money fraud in Rwanda.
 **Summative project — Introduction to Machine Learning**
 Author: **Jacques Twizeyimana**
 
+### Quick links
+
+- 📄 **Report:** [`report.pdf`](report.pdf) ([Markdown source](report.md))
+- 🎥 **Demo video:** https://www.bugufi.link/9BmltG
+- **Dataset (PaySim):** https://www.kaggle.com/datasets/ealaxi/paysim1
+
 ---
 
 ## Problem
@@ -15,12 +21,12 @@ Mobile money underpins Rwanda's digital economy, but its growth has been matched
 in fraud that the Rwanda Investigation Bureau (RIB) has publicly warned about. This project
 builds a reproducible pipeline that detects fraudulent transfers and critically compares
 five models, reproducing and contextualising the findings of the Carnegie Mellon University
-Africa study *"Mitigating Mobile Money Services Frauds in Rwanda."*
+Africa study _"Mitigating Mobile Money Services Frauds in Rwanda."_
 
 ## Dataset
 
 [**PaySim**](https://www.kaggle.com/datasets/ealaxi/paysim1) — a synthetic mobile-money
-transaction log (6,362,620 rows) by Lopez-Rojas *et al.* It is **not committed** to this
+transaction log (6,362,620 rows) by Lopez-Rojas _et al._ It is **not committed** to this
 repo (471 MB). To reproduce:
 
 1. Download from Kaggle (link above).
@@ -32,13 +38,13 @@ team used.
 
 ## Results
 
-| Model | Precision | Recall | F1 | ROC-AUC |
-|---|---|---|---|---|
-| Random Forest | 1.000 | 0.999 | **0.9995** | 0.9994 |
-| XGBoost | 0.947 | 0.996 | 0.971 | **0.9997** |
-| DL Functional (TF) | 0.806 | 0.992 | 0.889 | 0.9994 |
-| DL Sequential (TF) | 0.603 | 0.996 | 0.751 | 0.9988 |
-| Logistic Regression | 0.278 | 0.889 | 0.423 | 0.9772 |
+| Model               | Precision | Recall | F1         | ROC-AUC    |
+| ------------------- | --------- | ------ | ---------- | ---------- |
+| Random Forest       | 1.000     | 0.999  | **0.9995** | 0.9994     |
+| XGBoost             | 0.947     | 0.996  | 0.971      | **0.9997** |
+| DL Functional (TF)  | 0.806     | 0.992  | 0.889      | 0.9994     |
+| DL Sequential (TF)  | 0.603     | 0.996  | 0.751      | 0.9988     |
+| Logistic Regression | 0.278     | 0.889  | 0.423      | 0.9772     |
 
 Tree-based ensembles dominate this tabular problem; the neural networks are competitive on
 ranking metrics but trade precision for recall. Every learned model vastly outperforms the
@@ -46,13 +52,13 @@ provider's built-in rule flag, which caught only 16 of 8,213 frauds.
 
 ## Repository contents
 
-| File | Description |
-|---|---|
+| File                         | Description                                                                           |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
 | `momo_fraud_detection.ipynb` | Main notebook — EDA, feature engineering, all five models, evaluation, error analysis |
-| `report.md` | Scholarly report (~4,100 words, IEEE citations) |
-| `build_notebook.py` | Script that programmatically generates the notebook |
-| `requirements.txt` | Pinned dependencies |
-| `figures/` | Figures exported from the executed notebook |
+| `report.md`                  | Scholarly report (~4,100 words, IEEE citations)                                       |
+| `build_notebook.py`          | Script that programmatically generates the notebook                                   |
+| `requirements.txt`           | Pinned dependencies                                                                   |
+| `figures/`                   | Figures exported from the executed notebook                                           |
 
 ## Reproducing
 
@@ -82,5 +88,6 @@ takes roughly two minutes on an Apple M3 Pro.
 
 ## Links
 
-- **Report:** [`report.md`](report.md)
-- **Video:** _<insert link>_
+- **Report:** [`report.pdf`](report.pdf) · [`report.md`](report.md)
+- **Demo video:** https://www.bugufi.link/9BmltG
+- **Dataset (PaySim):** https://www.kaggle.com/datasets/ealaxi/paysim1
