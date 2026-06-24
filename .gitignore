@@ -1,3 +1,9 @@
+# Data — too large for git (471 MB). Download instructions in README.
+PS_20174392719_1491204439457_log.csv
+creditcard.csv
+*.csv
+local/
+
 # Python venv and cache
 venv/
 __pycache__/
